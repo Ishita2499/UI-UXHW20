@@ -6,11 +6,29 @@ body {
     font-weight: 200;
 }
 
+.fade-in-image {
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(0.6); }
+}
+
 .id-2 {
     display: block;
     width: 100%;
     margin: auto;
 }
+
+.About {
+    animation: fadeIn 7s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .About {
     width: 100%;
@@ -214,6 +232,14 @@ button:hover {
 }
 
 .skills-list {
+    animation: fadeIn 10s;
+}
+
+.skillstitle {
+    animation: fadeIn 10s;
+}
+
+.skills-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -306,6 +332,7 @@ footer ul li a:hover {
 .portfolio h1 {
     text-align: center;
     margin-bottom: 64px;
+    animation: fadeIn 10s;
 }
 
 .portfolio-list {
@@ -325,12 +352,14 @@ footer ul li a:hover {
     font-size: 24px;
     line-height: 40px;
     color: #000000;
+    animation: fadeIn 10s;
 }
 
 .portfolio-item img {
     width: 100%;
     height: auto;
     margin-bottom: 8px;
+    animation: fadeIn 10s;
 }
 
 .portfolio-item p {
