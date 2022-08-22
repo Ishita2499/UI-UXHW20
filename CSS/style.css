@@ -10,6 +10,9 @@ body {
     display: block;
     width: 100%;
     margin: auto;
+    animation-name: img;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .About {
